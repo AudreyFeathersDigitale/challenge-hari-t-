@@ -11,12 +11,12 @@ export default function DiagnosticResult({ profile, prenom }: Props) {
 
   return (
     <main className="min-h-screen bg-[#fff7f1] flex items-start justify-center px-3 py-4 sm:items-center sm:px-5 sm:py-8">
-      <section className="relative w-full max-w-[430px] overflow-hidden rounded-[30px] bg-[#E4B3CC] px-4 pb-6 pt-5 shadow-[0_10px_40px_rgba(0,0,0,0.14)] sm:max-w-[920px] sm:px-10 sm:pb-10 sm:pt-8">
+      <section className="relative w-full max-w-[430px] overflow-hidden rounded-[30px] bg-[#E4B3CC] px-4 pb-0 pt-5 shadow-[0_10px_40px_rgba(0,0,0,0.14)] sm:max-w-[920px] sm:px-10 sm:pb-0 sm:pt-8">
         <h1 className="relative z-40 mb-5 text-center text-[22px] font-black leading-tight text-black sm:text-3xl">
           🎉 Ton diagnostic est prêt !
         </h1>
 
-        <div className="relative min-h-[845px] sm:min-h-[920px] pb-0">
+        <div className="relative min-h-[845px] sm:min-h-[920px]">
           <div className="absolute top-0 right-0 bottom-0 w-[88%] rounded-t-full bg-[#F9E500] sm:w-[80%]" />
 
           <div className="absolute left-6 top-28 z-40 rotate-[-55deg]">
@@ -28,7 +28,7 @@ export default function DiagnosticResult({ profile, prenom }: Props) {
           <img
             src="/hari-cutout.png"
             alt=""
-            className="absolute bottom-0 left-[-86px] z-20 h-[64%] object-contain grayscale sm:left-[-20px] sm:h-[82%]"
+            className="absolute bottom-0 left-[-95px] z-20 h-[150%] object-contain grayscale sm:left-[-20px] sm:h-[82%]"
           />
 
           <div className="relative z-30 ml-auto w-[62%] pt-14 pr-3 sm:w-[66%] sm:pt-28 sm:pr-6">

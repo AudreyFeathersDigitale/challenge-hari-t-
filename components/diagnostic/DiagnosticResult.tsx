@@ -26,10 +26,10 @@ export default function DiagnosticResult({ profile, prenom }: Props) {
           <img
             src="/hari-cutout.png"
             alt=""
-            className="absolute bottom-[-8px] left-[-44px] z-20 h-[47%] object-contain grayscale sm:left-[-25px] sm:h-[72%]"
+            className="absolute bottom-[-10px] left-[-72px] z-20 h-[43%] object-contain grayscale sm:left-[-25px] sm:h-[72%]"
           />
 
-          <div className="relative z-30 ml-auto w-[70%] pt-14 sm:w-[66%] sm:pt-28">
+          <div className="relative z-30 ml-auto w-[62%] pt-14 pr-3 sm:w-[66%] sm:pt-28 sm:pr-6">
             <h2 className="font-serif text-[31px] font-black leading-[0.92] text-black sm:text-[52px]">
               {profile.title} {profile.emoji}
             </h2>
@@ -77,7 +77,7 @@ export default function DiagnosticResult({ profile, prenom }: Props) {
               <a
                 href="https://www.harimitsiki.com/inscription-webinaire-163e0888-6a124262-4700b8c4-93ff48c0-07ba58df-08005642"
                 target="_blank"
-                className="block w-full rounded-full bg-[#ff3f7f] px-5 py-3.5 text-center text-[14px] font-black text-white shadow-lg transition hover:scale-[1.01] sm:py-4 sm:text-[18px]"
+                className="mx-auto block w-[88%] rounded-full bg-[#ff3f7f] px-4 py-3 text-center text-[13px] font-black text-white shadow-lg transition hover:scale-[1.01] sm:w-full sm:py-4 sm:text-[18px]"
               >
                 Rejoindre le challenge →
               </a>
@@ -85,7 +85,7 @@ export default function DiagnosticResult({ profile, prenom }: Props) {
               <a
                 href="https://chat.whatsapp.com/HvURiHeUoT09Kr7IgDjikg?mode=gi_t"
                 target="_blank"
-                className="block w-full rounded-full bg-black px-5 py-3.5 text-center text-[14px] font-black text-white transition hover:scale-[1.01] sm:py-4 sm:text-[18px]"
+                className="mx-auto block w-[88%] rounded-full bg-black px-4 py-3 text-center text-[13px] font-black text-white transition hover:scale-[1.01] sm:w-full sm:py-4 sm:text-[18px]"
               >
                 Rejoindre WhatsApp 💬
               </a>

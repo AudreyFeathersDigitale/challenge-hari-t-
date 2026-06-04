@@ -16,8 +16,8 @@ export default function DiagnosticResult({ profile, prenom }: Props) {
           🎉 Ton diagnostic est prêt !
         </h1>
 
-        <div className="relative min-h-[845px] sm:min-h-[920px]">
-          <div className="absolute inset-y-0 right-0 w-[88%] rounded-t-full bg-[#F9E500] sm:w-[80%]" />
+        <div className="relative min-h-[845px] sm:min-h-[920px] pb-0">
+          <div className="absolute top-0 right-0 bottom-0 w-[88%] rounded-t-full bg-[#F9E500] sm:w-[80%]" />
 
           <div className="absolute left-6 top-28 z-40 rotate-[-55deg]">
             <p className="rounded-full px-3 py-1 text-[13px] font-black uppercase tracking-[0.25em] text-black sm:text-[20px]">
@@ -28,7 +28,7 @@ export default function DiagnosticResult({ profile, prenom }: Props) {
           <img
             src="/hari-cutout.png"
             alt=""
-            className="absolute bottom-0 left-[-68px] z-20 h-[100%] object-contain grayscale sm:left-[-10px] sm:h-[74%]"
+            className="absolute bottom-0 left-[-86px] z-20 h-[64%] object-contain grayscale sm:left-[-20px] sm:h-[82%]"
           />
 
           <div className="relative z-30 ml-auto w-[62%] pt-14 pr-3 sm:w-[66%] sm:pt-28 sm:pr-6">

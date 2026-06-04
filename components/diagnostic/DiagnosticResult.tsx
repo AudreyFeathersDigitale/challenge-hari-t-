@@ -14,7 +14,7 @@ export default function DiagnosticResult({ profile, prenom }: Props) {
       <section className="relative h-[860px] w-full max-w-[680px] overflow-hidden rounded-[32px] bg-[#E4B3CC] px-6 pt-6 shadow-[0_10px_40px_rgba(0,0,0,0.14)]">
         
         {/* Arche jaune */}
-        <div className="absolute bottom-0 right-[26px] h-[790px] w-[390px] rounded-t-full bg-[#F9E500]" />
+        <div className="absolute bottom-0 right-[20px] h-[790px] w-[400px] rounded-t-full bg-[#F9E500]" />
 
         {/* Titre haut */}
         <h1 className="relative z-40 mb-4 text-center text-[22px] font-black leading-tight text-black">
@@ -29,11 +29,14 @@ export default function DiagnosticResult({ profile, prenom }: Props) {
         </div>
 
         {/* Photo */}
-
-<img src="/hari-cutout.png" alt="" className="absolute bottom-[-100px] left-[-20px] z-20 h-[110%] max-w-none object-contain" />
+        <img
+          src="/hari-cutout.png"
+          alt=""
+          className="absolute bottom-0 left-[40px] z-20 h-[92%] max-w-none object-contain"
+        />
 
         {/* Contenu */}
-        <div className="relative z-30 ml-auto flex w-[350px] flex-col items-center pt-28 pr-4 text-center">
+        <div className="relative z-30 ml-auto flex w-[360px] flex-col items-center pt-24 pr-6 text-center">
           
           {/* Titre profil */}
           <h2 className="font-serif text-[34px] font-black leading-[0.9] tracking-[-0.03em] text-black">

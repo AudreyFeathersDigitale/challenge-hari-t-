@@ -17,7 +17,7 @@ export default function DiagnosticResult({ profile, prenom }: Props) {
         </h1>
 
         <div className="relative min-h-[845px] sm:min-h-[920px]">
-          <div className="absolute bottom-0 right-[-6px] top-6 w-[90%] rounded-t-full bg-[#fff000] sm:right-0 sm:w-[80%]" />
+          <div className="absolute bottom-0 right-[-6px] top-6 w-[90%] rounded-t-full bg-[#F9E500] sm:right-0 sm:w-[80%]" />
 
           <p className="absolute left-9 top-20 z-40 -rotate-[48deg] text-[13px] font-black uppercase tracking-[0.2em] text-black sm:left-28 sm:top-24 sm:text-[22px]">
             Ton profil
@@ -34,7 +34,7 @@ export default function DiagnosticResult({ profile, prenom }: Props) {
               {profile.title} {profile.emoji}
             </h2>
 
-            <div className="my-4 text-center text-[28px] text-[#ff3f7f] sm:my-6 sm:text-4xl">
+            <div className="my-4 text-center text-[28px] text-[#E4B3CC] sm:my-6 sm:text-4xl">
               —♡—
             </div>
 
@@ -50,7 +50,7 @@ export default function DiagnosticResult({ profile, prenom }: Props) {
                   <p
                     key={index}
                     className={`mb-3 ${
-                      isImportant ? "font-black text-[#ff3f7f]" : ""
+                      isImportant ? "font-black text-[#E4B3CC]" : ""
                     }`}
                   >
                     {paragraph}
@@ -60,11 +60,11 @@ export default function DiagnosticResult({ profile, prenom }: Props) {
             </div>
 
             <div className="mt-4 rounded-[20px] bg-[#fffce6]/95 p-3 shadow-sm backdrop-blur-sm sm:mt-6 sm:p-5">
-              <p className="mb-2 text-[15px] font-black text-[#ff3f7f] sm:text-[22px]">
+              <p className="mb-2 text-[15px] font-black text-[#E4B3CC] sm:text-[22px]">
                 🎯 Ta mini-action concrète
               </p>
 
-              <div className="text-[11px] font-bold leading-5 text-[#ff3f7f] sm:text-[18px] sm:leading-8">
+              <div className="text-[11px] font-bold leading-5 text-[#E4B3CC] sm:text-[18px] sm:leading-8">
                 {miniActionParts.slice(0, 2).map((paragraph, index) => (
                   <p key={index} className="mb-3">
                     {paragraph}
@@ -77,7 +77,7 @@ export default function DiagnosticResult({ profile, prenom }: Props) {
               <a
                 href="https://www.harimitsiki.com/inscription-webinaire-163e0888-6a124262-4700b8c4-93ff48c0-07ba58df-08005642"
                 target="_blank"
-                className="mx-auto block w-[82%] rounded-full bg-[#ff3f7f] px-4 py-2.5 text-center text-[12px] font-black text-white shadow-lg transition hover:scale-[1.01] sm:w-full sm:py-4 sm:text-[18px]"
+                className="mx-auto block w-[82%] rounded-full bg-[#E4B3CC] px-4 py-2.5 text-center text-[12px] font-black text-white shadow-lg transition hover:scale-[1.01] sm:w-full sm:py-4 sm:text-[18px]"
               >
                 Rejoindre le challenge →
               </a>

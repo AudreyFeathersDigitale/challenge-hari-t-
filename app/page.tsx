@@ -114,14 +114,37 @@ export default function Home() {
     }
   }
 
-  if (completed) {
-    return (
+  function resetDiagnostic() {
+  localStorage.removeItem("hari_answers");
+  localStorage.removeItem("hari_step");
+  localStorage.removeItem("hari_completed");
+  localStorage.removeItem("hari_started");
+
+  setStarted(false);
+  setCurrentStep(0);
+  setAnswers({});
+  setInputValue("");
+  setSelectedOptions([]);
+  setCompleted(false);
+}
+
+if (completed) {
+  return (
+    <div className="relative">
       <DiagnosticResult
         profile={getDiagnosticProfile(answers)}
         prenom={answers.prenom}
       />
-    );
-  }
+
+      <button
+        onClick={resetDiagnostic}
+        className="fixed bottom-4 left-1/2 z-50 -translate-x-1/2 rounded-full bg-black px-5 py-3 text-sm font-bold text-white shadow-lg transition hover:scale-[1.02]"
+      >
+        Refaire le diagnostic ↺
+      </button>
+    </div>
+  );
+}
 
   if (!started) {
     return (

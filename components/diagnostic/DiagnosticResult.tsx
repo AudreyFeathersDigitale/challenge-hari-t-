@@ -32,7 +32,7 @@ export default function DiagnosticResult({ profile, prenom }: Props) {
 <img
   src="/hari-cutout.png"
   alt=""
-  className="absolute bottom-[-30px] left-[-100px] z-20 w-[460px] max-w-none object-cover"
+  className="absolute bottom-[-10px] left-[42px] z-20 w-[220px] max-w-none object-contain"
 />
 
         {/* Contenu */}

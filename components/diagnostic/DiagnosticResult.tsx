@@ -18,7 +18,7 @@ export default function DiagnosticResult({ profile, prenom }: Props) {
 
         <div className="relative min-h-[560px]">
           {/* Arche jaune type affiche */}
-          <div className="absolute bottom-0 right-0 top-10 w-[82%] rounded-t-full bg-[#F9E500]" />
+          <div className="absolute right-0 top-20 h-[68%] w-[76%] rounded-t-full bg-[#F9E500]" />
 
           {/* Texte incliné */}
           <div className="absolute left-6 top-12 z-40 rotate-[-50deg]">

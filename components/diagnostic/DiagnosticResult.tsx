@@ -26,7 +26,7 @@ export default function DiagnosticResult({ profile, prenom }: Props) {
           <img
             src="/hari-cutout.png"
             alt=""
-            className="absolute bottom-[-10px] left-[-82px] z-20 h-[43%] object-contain grayscale sm:left-[-25px] sm:h-[72%]"
+            className="absolute bottom-[-10px] left-[-95px] z-20 h-[43%] object-contain grayscale sm:left-[-25px] sm:h-[72%]"
           />
 
           <div className="relative z-30 ml-auto w-[62%] pt-14 pr-3 sm:w-[66%] sm:pt-28 sm:pr-6">

@@ -22,7 +22,7 @@ export default function DiagnosticResult({ profile, prenom }: Props) {
         </h1>
 
         {/* Ton profil */}
-        <div className="absolute left-[155px] top-[120px] z-40 rotate-[-50deg]">
+       <div className="absolute left-[170px] top-[132px] z-40 rotate-[-50deg]">
           <p className="text-[12px] font-black uppercase tracking-[0.24em] text-black">
             Ton profil
           </p>

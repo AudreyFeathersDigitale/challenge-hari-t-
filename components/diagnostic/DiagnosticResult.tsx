@@ -59,12 +59,12 @@ export default function DiagnosticResult({ profile, prenom }: Props) {
               })}
             </div>
 
-            <div className="mt-5 rounded-[24px] bg-[#fffce6]/95 p-4 shadow-sm backdrop-blur-sm sm:mt-7 sm:p-7">
-              <p className="mb-3 text-[17px] font-black text-[#ff3f7f] sm:text-[24px]">
+            <div className="mt-4 rounded-[20px] bg-[#fffce6]/95 p-3 shadow-sm backdrop-blur-sm sm:mt-6 sm:p-5">
+              <p className="mb-2 text-[15px] font-black text-[#ff3f7f] sm:text-[22px]">
                 🎯 Ta mini-action concrète
               </p>
 
-              <div className="text-[13px] font-bold leading-6 text-[#ff3f7f] sm:text-[20px] sm:leading-9">
+              <div className="text-[11px] font-bold leading-5 text-[#ff3f7f] sm:text-[18px] sm:leading-8">
                 {miniActionParts.slice(0, 2).map((paragraph, index) => (
                   <p key={index} className="mb-3">
                     {paragraph}
@@ -77,7 +77,7 @@ export default function DiagnosticResult({ profile, prenom }: Props) {
               <a
                 href="https://www.harimitsiki.com/inscription-webinaire-163e0888-6a124262-4700b8c4-93ff48c0-07ba58df-08005642"
                 target="_blank"
-                className="mx-auto block w-[88%] rounded-full bg-[#ff3f7f] px-4 py-3 text-center text-[13px] font-black text-white shadow-lg transition hover:scale-[1.01] sm:w-full sm:py-4 sm:text-[18px]"
+                className="mx-auto block w-[82%] rounded-full bg-[#ff3f7f] px-4 py-2.5 text-center text-[12px] font-black text-white shadow-lg transition hover:scale-[1.01] sm:w-full sm:py-4 sm:text-[18px]"
               >
                 Rejoindre le challenge →
               </a>
@@ -85,7 +85,7 @@ export default function DiagnosticResult({ profile, prenom }: Props) {
               <a
                 href="https://chat.whatsapp.com/HvURiHeUoT09Kr7IgDjikg?mode=gi_t"
                 target="_blank"
-                className="mx-auto block w-[88%] rounded-full bg-black px-4 py-3 text-center text-[13px] font-black text-white transition hover:scale-[1.01] sm:w-full sm:py-4 sm:text-[18px]"
+                className="mx-auto block w-[82%] rounded-full bg-black px-4 py-2.5 text-center text-[12px] font-black text-white transition hover:scale-[1.01] sm:w-full sm:py-4 sm:text-[18px]"
               >
                 Rejoindre WhatsApp 💬
               </a>

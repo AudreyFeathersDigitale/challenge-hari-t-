@@ -19,9 +19,11 @@ export default function DiagnosticResult({ profile, prenom }: Props) {
         <div className="relative min-h-[845px] sm:min-h-[920px]">
           <div className="absolute bottom-0 right-[-6px] top-6 w-[90%] rounded-t-full bg-[#F9E500] sm:right-0 sm:w-[80%]" />
 
-          <p className="absolute left-9 top-20 z-40 -rotate-[48deg] text-[13px] font-black uppercase tracking-[0.2em] text-black sm:left-28 sm:top-24 sm:text-[22px]">
-            Ton profil
-          </p>
+          <div className="absolute left-6 top-28 z-40 rotate-[-55deg]">
+  <p className="rounded-full px-3 py-1 text-[13px] font-black uppercase tracking-[0.25em] text-black sm:text-[20px]">
+    Ton profil
+  </p>
+</div>
 
           <img
             src="/hari-cutout.png"

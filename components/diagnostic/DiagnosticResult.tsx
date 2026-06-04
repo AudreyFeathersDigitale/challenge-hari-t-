@@ -12,13 +12,13 @@ export default function DiagnosticResult({ profile, prenom }: Props) {
   return (
     <main className="min-h-screen bg-[#fff7f1] flex items-start justify-center px-3 py-4 sm:items-center sm:px-5 sm:py-8">
       <section className="relative h-[760px] w-full max-w-[480px] overflow-hidden rounded-[28px] bg-[#E4B3CC] px-4 pt-5 shadow-[0_10px_40px_rgba(0,0,0,0.14)]">
-        <div className="absolute bottom-0 left-[50%] h-[640px] w-[72%] -translate-x-1/2 rounded-t-full bg-[#F9E500]" />
+        <div className="absolute bottom-0 right-[-28px] h-[640px] w-[72%] rounded-t-full bg-[#F9E500]" />
 
         <h1 className="relative z-40 mb-4 text-center text-[22px] font-black leading-tight text-black">
           🎉 Ton diagnostic est prêt !
         </h1>
 
-        <div className="absolute left-6 top-20 z-40 rotate-[-50deg]">
+        <div className="absolute left-9 top-24 z-40 rotate-[-50deg]">
           <p className="text-[12px] font-black uppercase tracking-[0.22em] text-black">
             Ton profil
           </p>
@@ -30,7 +30,7 @@ export default function DiagnosticResult({ profile, prenom }: Props) {
           className="absolute bottom-0 left-[-38px] z-20 h-[52%] object-contain grayscale"
         />
 
-        <div className="relative z-30 mx-auto w-[62%] pt-20">
+        <div className="relative z-30 ml-auto w-[64%] pt-28 pr-5">
           <h2 className="font-serif text-[32px] font-black leading-[0.92] tracking-[-0.03em] text-black">
             {profile.title} {profile.emoji}
           </h2>

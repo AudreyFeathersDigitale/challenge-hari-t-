@@ -28,7 +28,7 @@ export default function DiagnosticResult({ profile, prenom }: Props) {
           </p>
         </div>
 
-        {/* Photo */}
+{/* Photo */}
 <img
   src="/hari-cutout.png"
   alt=""

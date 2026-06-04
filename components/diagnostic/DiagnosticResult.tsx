@@ -11,7 +11,7 @@ export default function DiagnosticResult({ profile, prenom }: Props) {
 
   return (
     <main className="min-h-screen bg-[#fff7f1] flex items-start justify-center px-3 py-4 sm:items-center sm:px-5 sm:py-8">
-      <section className="relative h-[860px] w-full max-w-[680px] overflow-hidden rounded-[28px] bg-[#E4B3CC] px-4 pt-5 shadow-[0_10px_40px_rgba(0,0,0,0.14)]">
+      <section className="relative h-[900px] w-full max-w-[680px] overflow-hidden rounded-[28px] bg-[#E4B3CC] px-4 pt-5 shadow-[0_10px_40px_rgba(0,0,0,0.14)]">
         <div className="absolute bottom-0 right-[30px]  h-[640px] w-[360px] rounded-t-full bg-[#F9E500]" />
 
         <h1 className="relative z-40 mb-4 text-center text-[22px] font-black leading-tight text-black">

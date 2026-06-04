@@ -11,24 +11,24 @@ export default function DiagnosticResult({ profile, prenom }: Props) {
 
   return (
     <main className="min-h-screen bg-[#fff7f1] flex items-start justify-center px-3 py-4 sm:items-center sm:px-5 sm:py-8">
-      <section className="relative w-full max-w-[430px] overflow-hidden rounded-[30px] bg-[#f7d1d7] px-4 pb-6 pt-5 shadow-[0_10px_40px_rgba(0,0,0,0.14)] sm:max-w-[920px] sm:px-10 sm:pb-10 sm:pt-8">
+      <section className="relative w-full max-w-[430px] overflow-hidden rounded-[30px] bg-[#E4B3CC] px-4 pb-6 pt-5 shadow-[0_10px_40px_rgba(0,0,0,0.14)] sm:max-w-[920px] sm:px-10 sm:pb-10 sm:pt-8">
         <h1 className="relative z-40 mb-5 text-center text-[22px] font-black leading-tight text-black sm:text-3xl">
           🎉 Ton diagnostic est prêt !
         </h1>
 
         <div className="relative min-h-[845px] sm:min-h-[920px]">
-          <div className="absolute bottom-0 right-[-6px] top-6 w-[90%] rounded-t-full bg-[#F9E500] sm:right-0 sm:w-[80%]" />
+          <div className="absolute inset-y-0 right-0 w-[88%] rounded-t-full bg-[#F9E500] sm:w-[80%]" />
 
           <div className="absolute left-6 top-28 z-40 rotate-[-55deg]">
-  <p className="rounded-full px-3 py-1 text-[13px] font-black uppercase tracking-[0.25em] text-black sm:text-[20px]">
-    Ton profil
-  </p>
-</div>
+            <p className="rounded-full px-3 py-1 text-[13px] font-black uppercase tracking-[0.25em] text-black sm:text-[20px]">
+              Ton profil
+            </p>
+          </div>
 
           <img
             src="/hari-cutout.png"
             alt=""
-            className="absolute bottom-[-10px] left-[-95px] z-20 h-[43%] object-contain grayscale sm:left-[-25px] sm:h-[72%]"
+            className="absolute bottom-0 left-[-68px] z-20 h-[54%] object-contain grayscale sm:left-[-10px] sm:h-[74%]"
           />
 
           <div className="relative z-30 ml-auto w-[62%] pt-14 pr-3 sm:w-[66%] sm:pt-28 sm:pr-6">

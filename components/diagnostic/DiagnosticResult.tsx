@@ -49,7 +49,7 @@ export default function DiagnosticResult({ profile, prenom }: Props) {
           </div>
 
           {/* Texte */}
-          <div className="max-h-[220px] overflow-y-auto text-center text-[14px] leading-8 text-black">
+          <div className="mx-auto max-h-[220px] w-[290px] overflow-y-auto text-center text-[14px] leading-8 text-black">
             {text.split("\n\n").slice(0, 4).map((paragraph, index) => (
               <p key={index} className="mb-3">
                 {paragraph}
@@ -58,7 +58,7 @@ export default function DiagnosticResult({ profile, prenom }: Props) {
           </div>
 
           {/* Mini action */}
-          <div className="mt-6 w-[320px] rounded-[20px] bg-[#fffce6]/95 p-5 shadow-sm">
+          <div className="mx-auto mt-6 w-[320px] rounded-[20px] bg-[#fffce6]/95 p-5 text-center shadow-sm">
             <p className="mb-3 text-[15px] font-black text-[#E4B3CC]">
               🎯 Ta mini-action concrète
             </p>
@@ -73,7 +73,7 @@ export default function DiagnosticResult({ profile, prenom }: Props) {
           </div>
 
           {/* Boutons */}
-          <div className="mt-5 space-y-3">
+          <div className="mt-5 flex w-full flex-col items-center space-y-3">
             <a
               href="https://www.harimitsiki.com/inscription-webinaire-163e0888-6a124262-4700b8c4-93ff48c0-07ba58df-08005642"
               target="_blank"

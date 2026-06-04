@@ -7,37 +7,38 @@ type Props = {
 
 export default function DiagnosticResult({ profile, prenom }: Props) {
   const text = profile.text.replaceAll("{prenom}", prenom || "");
+  const miniActionParts = profile.miniAction.split("\n\n");
 
   return (
     <main className="min-h-screen bg-[#fff7f1] flex items-start justify-center px-3 py-4 sm:items-center sm:px-5 sm:py-8">
-      <section className="relative w-full max-w-[430px] overflow-hidden rounded-[30px] bg-[#f7d1d7] p-5 shadow-[0_10px_40px_rgba(0,0,0,0.14)] sm:max-w-[920px] sm:p-10">
-        <h1 className="relative z-20 mb-6 text-center text-2xl font-black text-black sm:text-3xl">
+      <section className="relative w-full max-w-[430px] overflow-hidden rounded-[30px] bg-[#f7d1d7] px-4 pb-6 pt-5 shadow-[0_10px_40px_rgba(0,0,0,0.14)] sm:max-w-[920px] sm:px-10 sm:pb-10 sm:pt-8">
+        <h1 className="relative z-40 mb-5 text-center text-[22px] font-black leading-tight text-black sm:text-3xl">
           🎉 Ton diagnostic est prêt !
         </h1>
 
-        <div className="relative min-h-[860px] sm:min-h-[920px]">
-          <div className="absolute bottom-0 right-0 top-10 w-[86%] rounded-t-full bg-[#fff000] sm:w-[78%]" />
+        <div className="relative min-h-[845px] sm:min-h-[920px]">
+          <div className="absolute bottom-0 right-[-6px] top-6 w-[90%] rounded-t-full bg-[#fff000] sm:right-0 sm:w-[80%]" />
 
-          <p className="absolute left-5 top-24 z-20 -rotate-[48deg] text-[14px] font-black uppercase tracking-[0.18em] text-black sm:left-28 sm:top-24 sm:text-[22px]">
+          <p className="absolute left-9 top-20 z-40 -rotate-[48deg] text-[13px] font-black uppercase tracking-[0.2em] text-black sm:left-28 sm:top-24 sm:text-[22px]">
             Ton profil
           </p>
 
           <img
             src="/hari-cutout.png"
             alt=""
-            className="absolute bottom-0 left-[-40px] z-20 h-[56%] object-contain grayscale drop-shadow-[0_0_0_white] sm:left-[-20px] sm:h-[72%]"
+            className="absolute bottom-[-8px] left-[-44px] z-20 h-[47%] object-contain grayscale sm:left-[-25px] sm:h-[72%]"
           />
 
-          <div className="relative z-30 ml-auto w-[72%] pt-28 sm:w-[66%] sm:pt-32">
-            <h2 className="font-serif text-[30px] font-black leading-[0.95] text-black sm:text-[52px]">
+          <div className="relative z-30 ml-auto w-[70%] pt-14 sm:w-[66%] sm:pt-28">
+            <h2 className="font-serif text-[31px] font-black leading-[0.92] text-black sm:text-[52px]">
               {profile.title} {profile.emoji}
             </h2>
 
-            <div className="my-5 text-center text-4xl text-[#ff3f7f]">
+            <div className="my-4 text-center text-[28px] text-[#ff3f7f] sm:my-6 sm:text-4xl">
               —♡—
             </div>
 
-            <div className="max-h-[420px] overflow-y-auto pr-2 text-[14px] leading-6 text-black sm:max-h-none sm:text-[20px] sm:leading-9">
+            <div className="max-h-[180px] overflow-y-auto pr-1 text-[13px] font-medium leading-6 text-black sm:max-h-[340px] sm:text-[20px] sm:leading-9">
               {text.split("\n\n").map((paragraph, index) => {
                 const isImportant =
                   paragraph.includes("Pourquoi") ||
@@ -48,7 +49,7 @@ export default function DiagnosticResult({ profile, prenom }: Props) {
                 return (
                   <p
                     key={index}
-                    className={`mb-4 ${
+                    className={`mb-3 ${
                       isImportant ? "font-black text-[#ff3f7f]" : ""
                     }`}
                   >
@@ -58,32 +59,25 @@ export default function DiagnosticResult({ profile, prenom }: Props) {
               })}
             </div>
 
-            <div className="mt-6 rounded-[24px] bg-white/85 p-5 shadow-sm backdrop-blur-sm sm:p-7">
+            <div className="mt-5 rounded-[24px] bg-[#fffce6]/95 p-4 shadow-sm backdrop-blur-sm sm:mt-7 sm:p-7">
               <p className="mb-3 text-[17px] font-black text-[#ff3f7f] sm:text-[24px]">
                 🎯 Ta mini-action concrète
               </p>
 
-              <div className="text-[14px] font-medium leading-6 text-black sm:text-[20px] sm:leading-9">
-                {profile.miniAction.split("\n\n").map((paragraph, index) => (
-                  <p
-                    key={index}
-                    className={`mb-3 ${
-                      index === profile.miniAction.split("\n\n").length - 1
-                        ? "font-black text-[#ff3f7f]"
-                        : ""
-                    }`}
-                  >
+              <div className="text-[13px] font-bold leading-6 text-[#ff3f7f] sm:text-[20px] sm:leading-9">
+                {miniActionParts.slice(0, 2).map((paragraph, index) => (
+                  <p key={index} className="mb-3">
                     {paragraph}
                   </p>
                 ))}
               </div>
             </div>
 
-            <div className="mt-7 space-y-3">
+            <div className="mt-5 space-y-3 sm:mt-7">
               <a
                 href="https://www.harimitsiki.com/inscription-webinaire-163e0888-6a124262-4700b8c4-93ff48c0-07ba58df-08005642"
                 target="_blank"
-                className="block w-full rounded-full bg-[#ff3f7f] px-5 py-4 text-center text-[15px] font-black text-white shadow-lg transition hover:scale-[1.01] sm:text-[18px]"
+                className="block w-full rounded-full bg-[#ff3f7f] px-5 py-3.5 text-center text-[14px] font-black text-white shadow-lg transition hover:scale-[1.01] sm:py-4 sm:text-[18px]"
               >
                 Rejoindre le challenge →
               </a>
@@ -91,7 +85,7 @@ export default function DiagnosticResult({ profile, prenom }: Props) {
               <a
                 href="https://chat.whatsapp.com/HvURiHeUoT09Kr7IgDjikg?mode=gi_t"
                 target="_blank"
-                className="block w-full rounded-full bg-black px-5 py-4 text-center text-[15px] font-black text-white transition hover:scale-[1.01] sm:text-[18px]"
+                className="block w-full rounded-full bg-black px-5 py-3.5 text-center text-[14px] font-black text-white transition hover:scale-[1.01] sm:py-4 sm:text-[18px]"
               >
                 Rejoindre WhatsApp 💬
               </a>

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { questions } from "@/lib/questions";
 import DiagnosticResult from "@/components/diagnostic/DiagnosticResult";
 import { getDiagnosticProfile } from "@/lib/diagnosticRules";
@@ -15,8 +15,40 @@ export default function Home() {
   const [selectedOptions, setSelectedOptions] = useState<string[]>([]);
   const [completed, setCompleted] = useState(false);
 
+  useEffect(() => {
+    const savedAnswers = localStorage.getItem("hari_answers");
+    const savedStep = localStorage.getItem("hari_step");
+    const savedCompleted = localStorage.getItem("hari_completed");
+    const savedStarted = localStorage.getItem("hari_started");
+
+    if (savedAnswers) {
+      setAnswers(JSON.parse(savedAnswers));
+    }
+
+    if (savedStep) {
+      setCurrentStep(Number(savedStep));
+    }
+
+    if (savedCompleted === "true") {
+      setCompleted(true);
+    }
+
+    if (savedStarted === "true") {
+      setStarted(true);
+    }
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem("hari_answers", JSON.stringify(answers));
+    localStorage.setItem("hari_step", currentStep.toString());
+    localStorage.setItem("hari_completed", completed.toString());
+    localStorage.setItem("hari_started", started.toString());
+  }, [answers, currentStep, completed, started]);
+
   const currentQuestion = questions[currentStep];
-  const progress = Math.round(((currentStep + 1) / questions.length) * 100);
+  const progress = Math.round(
+    ((currentStep + 1) / questions.length) * 100
+  );
 
   function personalize(text: string) {
     return text.replaceAll("{prenom}", answers.prenom || "");
@@ -32,6 +64,7 @@ export default function Home() {
 
   function goBack() {
     if (currentStep === 0) return;
+
     setCurrentStep((prev) => prev - 1);
     setInputValue("");
     setSelectedOptions([]);
@@ -75,7 +108,9 @@ export default function Home() {
       });
 
       console.log("Diagnostic terminé :", finalAnswers);
+
       setCompleted(true);
+      localStorage.setItem("hari_completed", "true");
     }
   }
 
@@ -100,20 +135,24 @@ export default function Home() {
             />
 
             <div className="absolute inset-0 bg-[#fff8f2]/78 opacity-35" />
+
             <div className="absolute inset-0 bg-gradient-to-b from-[#fffdf8]/65 via-[#fff4e7]/35 to-[#ffc98c]/28" />
           </div>
 
           <div className="relative z-10 flex min-h-[calc(100vh-32px)] flex-col items-center px-8 pt-10 text-center sm:min-h-[760px] sm:pt-12">
-               <h1 className="font-serif text-[56px] leading-[0.9] tracking-[-0.04em] text-[#131f4b] sm:text-[58px]">
+            <h1 className="font-serif text-[56px] leading-[0.9] tracking-[-0.04em] text-[#131f4b] sm:text-[58px]">
               Diagnostic
               <br />
               Vente
             </h1>
 
-            <div className="my-6 text-4xl text-[#ff4f87]">♡</div>
+            <div className="my-6 text-4xl text-[#ff4f87]">
+              ♡
+            </div>
 
             <p className="max-w-[280px] text-[17px] leading-6 text-[#1b2340]">
-              Découvre ce qui bloque réellement tes ventes et repars avec ton{" "}
+              Découvre ce qui bloque réellement tes ventes
+              et repars avec ton{" "}
               <span className="font-semibold text-[#ff3f7f]">
                 plan d’action personnalisé
               </span>
@@ -122,18 +161,19 @@ export default function Home() {
             <div className="mt-8 space-y-3 text-left text-[15px] font-medium text-[#1b2340]">
               <p>🎯 100% personnalisé</p>
               <p>☆ Une action concrète à la clé</p>
-              <p>🔒 ⁠100% sécurisé et confidentiel</p>
+              <p>🔒 100% sécurisé et confidentiel</p>
             </div>
 
             <div className="mt-14 w-full pb-7">
               <button
-                onClick={() => setStarted(true)}
+                onClick={() => {
+                  setStarted(true);
+                  localStorage.setItem("hari_started", "true");
+                }}
                 className="w-full rounded-full bg-gradient-to-r from-[#ff4f87] to-[#ff6b9d] px-6 py-3.5 text-[15px] font-bold text-white shadow-xl shadow-pink-300/40 transition hover:scale-[1.02] sm:py-4 sm:text-[16px]"
               >
                 Je veux mon diagnostic ✨
               </button>
-
-            
             </div>
           </div>
         </section>
@@ -158,6 +198,7 @@ export default function Home() {
             <p className="text-sm font-semibold text-[#1d2340]">
               Étape {currentStep + 1} sur {questions.length}
             </p>
+
             <p className="text-sm font-semibold text-[#1d2340]">
               {progress}%
             </p>
@@ -227,7 +268,11 @@ export default function Home() {
           <>
             <div className="mt-10">
               <input
-                type={currentQuestion.type === "email" ? "email" : "text"}
+                type={
+                  currentQuestion.type === "email"
+                    ? "email"
+                    : "text"
+                }
                 placeholder="Écris ta réponse ici..."
                 value={inputValue}
                 onChange={(e) => setInputValue(e.target.value)}

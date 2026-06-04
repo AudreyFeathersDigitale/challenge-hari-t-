@@ -104,11 +104,7 @@ export default function Home() {
           </div>
 
           <div className="relative z-10 flex min-h-[calc(100vh-32px)] flex-col items-center px-8 pt-10 text-center sm:min-h-[760px] sm:pt-12">
-            <p className="mb-7 text-4xl font-light italic text-[#ff4f87]">
-              Challenge Été ☀️
-            </p>
-
-            <h1 className="font-serif text-[56px] leading-[0.9] tracking-[-0.04em] text-[#131f4b] sm:text-[58px]">
+               <h1 className="font-serif text-[56px] leading-[0.9] tracking-[-0.04em] text-[#131f4b] sm:text-[58px]">
               Diagnostic
               <br />
               Vente
@@ -124,9 +120,9 @@ export default function Home() {
             </p>
 
             <div className="mt-8 space-y-3 text-left text-[15px] font-medium text-[#1b2340]">
-              <p>⚡ Clair et rapide</p>
               <p>🎯 100% personnalisé</p>
               <p>☆ Une action concrète à la clé</p>
+              <p>🔒 ⁠100% sécurisé et confidentiel</p>
             </div>
 
             <div className="mt-14 w-full pb-7">
@@ -137,9 +133,7 @@ export default function Home() {
                 Commencer mon diagnostic ✨
               </button>
 
-              <p className="mt-25 text-xs text-[#7d6c65]">
-                🔒 C’est offert et confidentiel
-              </p>
+            
             </div>
           </div>
         </section>

@@ -130,7 +130,7 @@ export default function Home() {
                 onClick={() => setStarted(true)}
                 className="w-full rounded-full bg-gradient-to-r from-[#ff4f87] to-[#ff6b9d] px-6 py-3.5 text-[15px] font-bold text-white shadow-xl shadow-pink-300/40 transition hover:scale-[1.02] sm:py-4 sm:text-[16px]"
               >
-                Commencer mon diagnostic ✨
+                Je veux mon diagnostic ✨
               </button>
 
             

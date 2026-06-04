@@ -28,9 +28,9 @@ export default function DiagnosticResult({ profile, prenom }: Props) {
           </p>
         </div>
 
-{/* Photo */}
-<img src="/hari-cutout.png" alt="" className="absolute bottom-[-100px] left-[-20px] z-20 h-[110%] max-w-none object-contain" />
+        {/* Photo */}
 
+<img src="/hari-cutout.png" alt="" className="absolute bottom-[-100px] left-[-20px] z-20 h-[110%] max-w-none object-contain" />
 
         {/* Contenu */}
         <div className="relative z-30 ml-auto flex w-[350px] flex-col items-center pt-28 pr-4 text-center">

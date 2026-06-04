@@ -16,9 +16,9 @@ export default function DiagnosticResult({ profile, prenom }: Props) {
           🎉 Ton diagnostic est prêt !
         </h1>
 
-        <div className="relative min-h-[760px]">
+        <div className="relative min-h-[860px]">
           {/* Arche jaune type affiche */}
-          <div className="absolute bottom-0 right-0 top-16 w-[78%] rounded-t-full bg-[#F9E500]" />
+          <div className="absolute bottom-0 right-0 top-10 w-[82%] rounded-t-full bg-[#F9E500]" />
 
           {/* Texte incliné */}
           <div className="absolute left-6 top-12 z-40 rotate-[-50deg]">
@@ -31,11 +31,11 @@ export default function DiagnosticResult({ profile, prenom }: Props) {
           <img
             src="/hari-cutout.png"
             alt=""
-            className="absolute bottom-0 left-[-38px] z-20 h-[54%] object-contain grayscale"
+            className="absolute bottom-[-10px] left-[-38px] z-20 h-[60%] object-contain grayscale"
           />
 
           {/* Contenu */}
-          <div className="relative z-30 ml-auto w-[68%] pt-16 pr-3">
+          <div className="relative z-30 ml-auto w-[68%] pt-24 pr-3">
             <h2 className="font-serif text-[30px] font-black leading-[0.92] text-black">
               {profile.title} {profile.emoji}
             </h2>
@@ -44,7 +44,7 @@ export default function DiagnosticResult({ profile, prenom }: Props) {
               —♡—
             </div>
 
-            <div className="max-h-[150px] overflow-y-auto pr-1 text-[12px] font-medium leading-5 text-black">
+            <div className="max-h-[170px] overflow-y-auto pr-1 text-[12px] font-medium leading-5 text-black">
               {text.split("\n\n").slice(0, 4).map((paragraph, index) => (
                 <p key={index} className="mb-2">
                   {paragraph}
@@ -52,7 +52,7 @@ export default function DiagnosticResult({ profile, prenom }: Props) {
               ))}
             </div>
 
-            <div className="mt-4 rounded-[18px] bg-[#fffce6]/95 p-3 shadow-sm">
+            <div className="mt-5 rounded-[18px] bg-[#fffce6]/95 p-3 shadow-sm">
               <p className="mb-2 text-[14px] font-black text-[#E4B3CC]">
                 🎯 Ta mini-action concrète
               </p>
@@ -66,11 +66,11 @@ export default function DiagnosticResult({ profile, prenom }: Props) {
               </div>
             </div>
 
-            <div className="mt-4 space-y-2">
+            <div className="mt-5 space-y-2">
               <a
                 href="https://www.harimitsiki.com/inscription-webinaire-163e0888-6a124262-4700b8c4-93ff48c0-07ba58df-08005642"
                 target="_blank"
-                className="mx-auto block w-[88%] rounded-full bg-[#E4B3CC] px-4 py-2.5 text-center text-[12px] font-black text-white shadow-lg transition hover:scale-[1.01]"
+                className="mx-auto block w-[82%] rounded-full bg-[#E4B3CC] px-4 py-2.5 text-center text-[12px] font-black text-white shadow-lg transition hover:scale-[1.01]"
               >
                 Rejoindre le challenge →
               </a>
@@ -78,7 +78,7 @@ export default function DiagnosticResult({ profile, prenom }: Props) {
               <a
                 href="https://chat.whatsapp.com/HvURiHeUoT09Kr7IgDjikg?mode=gi_t"
                 target="_blank"
-                className="mx-auto block w-[88%] rounded-full bg-black px-4 py-2.5 text-center text-[12px] font-black text-white transition hover:scale-[1.01]"
+                className="mx-auto block w-[82%] rounded-full bg-black px-4 py-2.5 text-center text-[12px] font-black text-white transition hover:scale-[1.01]"
               >
                 Rejoindre WhatsApp 💬
               </a>

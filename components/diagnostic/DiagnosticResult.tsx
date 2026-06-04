@@ -16,7 +16,7 @@ export default function DiagnosticResult({ profile, prenom }: Props) {
           🎉 Ton diagnostic est prêt !
         </h1>
 
-        <div className="relative min-h-[860px]">
+        <div className="relative min-h-[560px]">
           {/* Arche jaune type affiche */}
           <div className="absolute bottom-0 right-0 top-10 w-[82%] rounded-t-full bg-[#F9E500]" />
 

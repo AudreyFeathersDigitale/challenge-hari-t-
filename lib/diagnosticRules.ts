@@ -1,12 +1,13 @@
 export type DiagnosticProfile = {
   key: string;
   title: string;
-  emoji: string;
   text: string;
   miniAction: string;
 };
 
-export function getDiagnosticProfile(answers: Record<string, string>): DiagnosticProfile {
+export function getDiagnosticProfile(
+  answers: Record<string, string>
+): DiagnosticProfile {
   const blocage = answers.blocage || "";
   const peur = answers.peur || "";
   const regularite = answers.regularite || "";
@@ -19,12 +20,11 @@ export function getDiagnosticProfile(answers: Record<string, string>): Diagnosti
   ) {
     return {
       key: "contenu",
-      title: "La créatrice de contenu qui ne convertit pas",
-      emoji: "📲",
+      title: "Votre contenu ne convertit pas encore",
       text:
-        "{prenom}, tu es peut-être dans cette situation où tu crées du contenu, tu essaies d’être régulière… mais tu te demandes pourquoi ça ne vend pas encore. Le problème n’est pas forcément ton contenu : il doit peut-être créer plus de désir, d’urgence et de passage à l’action.",
+        "{prenom}, vous publiez régulièrement et vous investissez du temps dans votre communication. Pourtant, vos contenus ne génèrent pas suffisamment de demandes ou de ventes. Le problème ne vient pas forcément de votre régularité, mais plutôt de la façon dont votre contenu crée le désir et incite au passage à l’action.",
       miniAction:
-        "Regarde tes 3 derniers contenus et demande-toi : est-ce que ce contenu donne envie d’acheter ou juste envie de liker ?",
+        "Analysez vos trois derniers contenus et demandez-vous : donnent-ils envie d'acheter ou simplement envie d'interagir ?",
     };
   }
 
@@ -36,12 +36,11 @@ export function getDiagnosticProfile(answers: Record<string, string>): Diagnosti
   ) {
     return {
       key: "vendeuse_bloquee",
-      title: "La vendeuse bloquée",
-      emoji: "💬",
+      title: "Le frein principal est la vente",
       text:
-        "{prenom}, ton blocage principal semble lié à la peur de vendre. Ce n’est pas parce que tu n’es pas faite pour vendre : c’est souvent parce que tu as associé la vente à quelque chose de lourd, gênant ou intrusif.",
+        "{prenom}, votre principal blocage semble être lié à la vente. Il ne s'agit pas d'un manque de compétences, mais plutôt d'une perception inconfortable de l'acte de vendre, qui peut freiner vos actions au quotidien.",
       miniAction:
-        "Complète cette phrase : vendre serait plus simple pour moi si je savais…",
+        "Complétez cette phrase : « Vendre serait plus simple pour moi si… »",
     };
   }
 
@@ -52,12 +51,11 @@ export function getDiagnosticProfile(answers: Record<string, string>): Diagnosti
   ) {
     return {
       key: "offre_floue",
-      title: "L’offre trop floue",
-      emoji: "🧩",
+      title: "Votre offre manque de clarté",
       text:
-        "{prenom}, ton offre a sûrement du potentiel. Mais aujourd’hui, elle n’est peut-être pas encore assez claire pour déclencher une décision. Une offre floue demande trop d’effort au prospect.",
+        "{prenom}, votre offre possède certainement un réel potentiel, mais elle ne communique peut-être pas encore suffisamment clairement la valeur qu'elle apporte. Une offre claire facilite toujours la prise de décision.",
       miniAction:
-        "Reformule ton offre comme ça : En [durée], j’aide [cible] à obtenir [résultat] sans [douleur principale].",
+        "Reformulez votre offre ainsi : « J'aide [cible] à obtenir [résultat] en [durée], sans [obstacle principal]. »",
     };
   }
 
@@ -67,22 +65,20 @@ export function getDiagnosticProfile(answers: Record<string, string>): Diagnosti
   ) {
     return {
       key: "experte_invisible",
-      title: "L’experte invisible",
-      emoji: "👀",
+      title: "Votre expertise manque de visibilité",
       text:
-        "{prenom}, ton problème n’est probablement pas que tu n’es pas compétente. C’est peut-être que ton marché ne voit pas encore clairement pourquoi il devrait venir vers toi maintenant.",
+        "{prenom}, votre expertise est probablement réelle, mais votre marché ne perçoit pas encore suffisamment ce qui vous différencie. Il est essentiel de rendre votre proposition de valeur plus visible et plus concrète.",
       miniAction:
-        "Écris cette phrase : J’aide [cible] à passer de [problème] à [résultat concret].",
+        "Complétez cette phrase : « J'aide [cible] à passer de [problème] à [résultat]. »",
     };
   }
 
   return {
     key: "business_debrouillarde",
-    title: "La business débrouillarde",
-    emoji: "🌀",
+    title: "Votre activité manque de structure",
     text:
-      "{prenom}, tu fais sûrement beaucoup de choses : tu postes, tu ajustes ton offre, tu testes des idées… mais tout ça n’est peut-être pas encore relié dans un vrai système.",
+      "{prenom}, vous mettez déjà en place plusieurs actions pour développer votre activité. En revanche, elles semblent fonctionner de manière isolée plutôt que dans un véritable système d'acquisition et de vente.",
     miniAction:
-      "Note les 3 étapes que tu utilises aujourd’hui pour transformer une personne intéressée en cliente.",
+      "Listez les trois étapes qui transforment aujourd'hui un prospect en client dans votre activité.",
   };
 }

@@ -9,48 +9,48 @@ export const questions: Question[] = [
   {
     id: "prenom",
     label:
-      "Coucou ❤️\n\nBienvenue dans ton diagnostic vente.\n\nAvant qu’on commence, c’est quoi ton prénom ? ❤️",
+      "Bienvenue dans ton diagnostic vente.\n\nAvant de commencer, quel est ton prénom ?",
     type: "text",
   },
 
   {
     id: "email",
     label:
-      "Super {prenom} 😍\n\nQuel est ton email ?\n\nIl servira uniquement pour ton suivi lié au challenge et à ton diagnostic.",
+      "Merci {prenom}.\n\nQuel est ton email ?\n\nIl servira uniquement pour ton suivi lié au challenge et à ton diagnostic.",
     type: "email",
   },
 
   {
     id: "instagram",
     label:
-      "Merci {prenom} 😍\n\nQuel est ton compte Instagram ou LinkedIn ?\nTu peux écrire ton @ directement.",
+      "Parfait.\n\nQuel est ton compte Instagram ou LinkedIn ?\nTu peux écrire ton @ directement.",
     type: "text",
   },
 
   {
     id: "offre",
     label:
-      "Aujourd’hui, tu vends quoi exactement ?\n\nExemple : coaching, prestation de service, accompagnement, formation, consulting, création de contenu, design, etc.",
+      "Aujourd’hui, que proposes-tu exactement ?\n\nExemple : coaching, prestation de service, accompagnement, formation, consulting, création de contenu, design, etc.",
     type: "text",
   },
 
   {
     id: "cible",
     label:
-      "Ok trop cool 🤩\n\nEt tu le vends à qui ?\nSois la plus précise possible stp :)",
+      "À qui s’adresse ton offre ?\nSois la plus précise possible.",
     type: "text",
   },
 
   {
     id: "prix",
-    label: "Alright 🤭 ! Ton offre coûte combien environ ?",
+    label: "Quel est le prix de ton offre ?",
     type: "buttons",
     options: [
-      "Moins de 200€",
-      "Entre 200€ et 500€",
-      "Entre 500€ et 1 000€",
-      "Entre 1 000€ et 3 000€",
-      "Plus de 3 000€",
+      "Moins de 200 €",
+      "Entre 200 € et 500 €",
+      "Entre 500 € et 1 000 €",
+      "Entre 1 000 € et 3 000 €",
+      "Plus de 3 000 €",
       "Je ne sais pas encore / mon offre n’est pas claire",
     ],
   },
@@ -58,7 +58,7 @@ export const questions: Question[] = [
   {
     id: "clients",
     label:
-      "Et sur les 60 derniers jours, tu as signé combien de clientes ?",
+      "Au cours des 60 derniers jours, combien de clientes as-tu signées ?",
     type: "buttons",
     options: [
       "0",
@@ -72,16 +72,16 @@ export const questions: Question[] = [
   {
     id: "canal",
     label:
-      "Aujourd’hui, sur quel canal tu as déjà quelque chose en place pour trouver des clientes ?",
+      "Aujourd’hui, sur quels canaux es-tu présente pour trouver des clientes ?",
     type: "multi-buttons",
     options: [
       "Instagram",
       "LinkedIn",
       "TikTok",
       "Recommandation / bouche-à-oreille",
-      "Prospection en DM",
-      "Email / newsletter",
-      "Ads / publicité",
+      "Prospection en message privé",
+      "Email / Newsletter",
+      "Publicité",
       "Je n’ai pas encore de canal clair",
     ],
   },
@@ -89,28 +89,28 @@ export const questions: Question[] = [
   {
     id: "regularite",
     label:
-      "Sur ce canal, tu es plutôt dans quelle situation aujourd’hui ?",
+      "Sur ce canal, quelle est ta situation aujourd’hui ?",
     type: "buttons",
     options: [
-      "Je suis régulière, mais ça ne convertit pas assez",
-      "Je poste / prospecte de temps en temps",
-      "Je commence mais je ne sais pas trop quoi faire",
-      "Je ne suis pas régulière du tout",
-      "Je n’ai pas encore vraiment commencé",
+      "Je suis régulière, mais cela ne convertit pas assez",
+      "Je publie ou prospecte de temps en temps",
+      "Je débute et je ne sais pas vraiment quoi faire",
+      "Je ne suis pas régulière",
+      "Je n’ai pas encore commencé",
     ],
   },
 
   {
     id: "blocage",
     label:
-      "Aujourd’hui, qu’est-ce qui te frustre le plus dans tes ventes ? 👀",
+      "Aujourd’hui, quel est ton principal frein dans tes ventes ?",
     type: "buttons",
     options: [
-      "Je poste mais ça ne convertit pas",
+      "Je publie mais cela ne convertit pas",
       "Je ne sais pas quoi dire pour vendre",
       "J’ai peur de prospecter",
       "Mon offre n’est pas assez claire",
-      "Les gens me disent “je vais réfléchir”",
+      "Les prospects me disent « je vais réfléchir »",
       "Je n’ai pas assez de prospects",
       "Je doute de ma légitimité",
       "Je ne sais pas par où commencer",
@@ -120,22 +120,22 @@ export const questions: Question[] = [
   {
     id: "peur",
     label:
-      "Quand tu dois parler de ton offre, qu’est-ce qui se passe le plus dans ta tête ?",
+      "Lorsque tu dois parler de ton offre, quelle pensée revient le plus souvent ?",
     type: "buttons",
     options: [
       "J’ai peur de déranger",
-      "J’ai peur de passer pour une vendeuse de tapis",
-      "J’ai peur qu’on me trouve trop chère",
-      "Je ne sais pas comment amener la conversation",
+      "J’ai peur d’être trop commerciale",
+      "J’ai peur que mon prix soit trop élevé",
+      "Je ne sais pas comment engager la conversation",
       "Je repousse toujours au lendemain",
-      "Je manque juste de méthode",
+      "Il me manque une méthode",
       "Je n’ai pas peur, mais je ne sais pas quoi faire concrètement",
     ],
   },
 
   {
     id: "objectif",
-    label: "Ton objectif cet été, ce serait quoi ? ☀️",
+    label: "Quel est ton objectif pour cet été ?",
     type: "buttons",
     options: [
       "Signer mon premier client",
@@ -143,31 +143,31 @@ export const questions: Question[] = [
       "Vendre plus régulièrement",
       "Assumer mes prix",
       "Clarifier mon offre",
-      "Arrêter d’avoir peur de vendre",
-      "Trouver une vraie méthode pour vendre",
-      "Atteindre 3K, 5K voire 10K/mois",
+      "Être plus à l’aise pour vendre",
+      "Trouver une méthode efficace",
+      "Atteindre 3K, 5K ou 10K par mois",
     ],
   },
 
   {
     id: "inscriteChallenge",
     label:
-      "Merci {prenom} 💛\n\nOk super, avec tes réponses je commence à voir ce qui bloque dans tes ventes.\n\nAvant de te donner ton diagnostic, petite question importante :\n\nEst-ce que tu as bien validé ton inscription au challenge gratuit du 6 au 8 juillet ? 😍",
+      "Merci {prenom}.\n\nAvec tes réponses, je commence à identifier les principaux freins à tes ventes.\n\nAvant de te présenter ton diagnostic, une dernière question :\n\nAs-tu bien validé ton inscription au challenge gratuit ?",
     type: "buttons",
     options: [
-      "Oui, je suis inscrite ! Trop hâte !! ❤️",
-      "Non, pas encore",
+      "Oui",
+      "Pas encore",
     ],
   },
 
   {
     id: "whatsappRejoint",
     label:
-      "Et pour le groupe WhatsApp du challenge ? C’est bon aussi ?? 🥰",
+      "As-tu également rejoint le groupe WhatsApp du challenge ?",
     type: "buttons",
     options: [
-      "Oui, j’ai rejoint le groupe",
-      "Non, pas encore",
+      "Oui",
+      "Pas encore",
     ],
   },
 ];

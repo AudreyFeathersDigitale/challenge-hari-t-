@@ -18,15 +18,8 @@ export default function DiagnosticResult({ profile, prenom }: Props) {
 
         {/* Titre haut */}
         <h1 className="relative z-40 mb-4 text-center text-[22px] font-black leading-tight text-black">
-          🎉 Ton diagnostic est prêt !
+          Ton diagnostic est prêt !
         </h1>
-
-        {/* Ton profil */}
-       <div className="absolute left-[170px] top-[132px] z-40 rotate-[-50deg]">
-          <p className="text-[12px] font-black uppercase tracking-[0.24em] text-black">
-            Ton profil
-          </p>
-        </div>
 
         {/* Photo */}
        <img
@@ -60,7 +53,7 @@ export default function DiagnosticResult({ profile, prenom }: Props) {
           {/* Mini action */}
           <div className="mx-auto mt-6 w-[320px] rounded-[20px] bg-[#fffce6]/95 p-5 text-center shadow-sm">
             <p className="mb-3 text-[15px] font-black text-[#E4B3CC]">
-              🎯 Ta mini-action concrète
+              Ta mini-action concrète
             </p>
 
             <div className="text-[12px] font-bold leading-6 text-[#E4B3CC]">
@@ -87,7 +80,7 @@ export default function DiagnosticResult({ profile, prenom }: Props) {
               target="_blank"
               className="mx-auto block w-[280px] rounded-full bg-black px-4 py-3 text-center text-[13px] font-black text-white transition hover:scale-[1.01]"
             >
-              Rejoindre WhatsApp 💬
+              Rejoindre WhatsApp
             </a>
           </div>
         </div>

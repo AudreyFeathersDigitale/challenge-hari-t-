@@ -182,7 +182,7 @@ if (completed) {
             </p>
 
             <div className="mt-8 space-y-3 text-left text-[15px] font-medium text-[#1b2340]">
-              <p>🎯 100% personnalisé</p>
+              <p>100% personnalisé</p>
               <p>☆ Une action concrète à la clé</p>
               <p>🔒 100% sécurisé et confidentiel</p>
             </div>
@@ -195,7 +195,7 @@ if (completed) {
                 }}
                 className="w-full rounded-full bg-gradient-to-r from-[#ff4f87] to-[#ff6b9d] px-6 py-3.5 text-[15px] font-bold text-white shadow-xl shadow-pink-300/40 transition hover:scale-[1.02] sm:py-4 sm:text-[16px]"
               >
-                Je veux mon diagnostic ✨
+                Je veux mon diagnostic
               </button>
             </div>
           </div>

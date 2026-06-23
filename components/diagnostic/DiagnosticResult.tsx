@@ -38,7 +38,7 @@ export default function DiagnosticResult({ profile, prenom }: Props) {
 
           {/* Coeur */}
           <div className="my-4 text-center text-[26px] text-[#E4B3CC]">
-            —♡—
+            —————
           </div>
 
           {/* Texte */}

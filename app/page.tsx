@@ -123,7 +123,7 @@ export default function Home() {
 
         <button
           onClick={resetDiagnostic}
-          className="fixed bottom-4 left-1/2 z-50 -translate-x-1/2 rounded-full bg-black px-5 py-3 text-sm font-bold text-white shadow-lg transition hover:scale-[1.02]"
+          className="fixed bottom-4 left-1/2 z-50 -translate-x-1/2 rounded-full bg-black px-5 py-3 text-sm font-bold text-white shadow-lg transition hover:scale-[1.02] max-sm:bottom-2 max-sm:px-4 max-sm:py-2 max-sm:text-xs"
         >
           Refaire le diagnostic
         </button>

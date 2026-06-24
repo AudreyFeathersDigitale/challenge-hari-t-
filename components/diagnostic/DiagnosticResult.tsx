@@ -12,31 +12,21 @@ export default function DiagnosticResult({ profile, prenom }: Props) {
 
   return (
     <main className="min-h-screen bg-[#fff7f1] flex items-start justify-center px-3 py-4 sm:items-center sm:px-5 sm:py-8">
-      <section className="relative w-full max-w-[680px] overflow-hidden rounded-[32px] bg-[#E4B3CC] px-5 pt-6 pb-6 shadow-[0_10px_40px_rgba(0,0,0,0.14)] sm:h-[860px] sm:px-6 sm:pb-0">
-        <div className="absolute bottom-0 right-0 h-[78%] w-[82%] rounded-t-full bg-[#F9E500] sm:right-[20px] sm:h-[790px] sm:w-[400px]" />
+      <section className="relative w-full max-w-[680px] overflow-hidden rounded-[32px] bg-[#E4B3CC] px-5 pt-6 pb-10 shadow-[0_10px_40px_rgba(0,0,0,0.14)] sm:h-[860px] sm:px-6 sm:pb-0">
+        <div className="absolute bottom-0 right-0 h-[78%] w-[78%] rounded-t-full bg-[#F9E500] sm:right-[20px] sm:h-[790px] sm:w-[400px]" />
 
-        <h1 className="relative z-40 mb-6 text-center text-[22px] font-black leading-tight text-black">
+        <h1 className="relative z-40 mb-5 text-center text-[22px] font-black text-black">
           Ton diagnostic est prêt !
         </h1>
 
-        {/* Photo desktop */}
         <img
           src="/hari-cutout.png"
           alt=""
-          className="absolute bottom-0 left-[-38px] z-20 hidden h-[76%] max-w-none sm:block"
+          className="relative z-30 mx-auto mb-2 h-[190px] max-w-none sm:absolute sm:bottom-0 sm:left-[-38px] sm:mx-0 sm:mb-0 sm:h-[76%]"
         />
 
-        {/* Photo mobile */}
-        <div className="relative z-30 mb-5 flex justify-center sm:hidden">
-          <img
-            src="/hari-cutout.png"
-            alt=""
-            className="h-[230px] max-w-none"
-          />
-        </div>
-
-        <div className="relative z-30 ml-auto flex w-full flex-col items-center text-center sm:w-[360px] sm:pt-20 sm:pr-6">
-          <h2 className="font-serif text-[36px] font-black leading-[0.88] tracking-[-0.03em] text-black sm:text-[34px]">
+        <div className="relative z-30 ml-auto flex w-full flex-col items-center text-center sm:w-[360px] sm:pt-24 sm:pr-6">
+          <h2 className="font-serif text-[42px] font-black leading-[0.86] tracking-[-0.04em] text-black sm:text-[34px]">
             {titleLine1}
             {titleLine2 && (
               <>
@@ -48,7 +38,7 @@ export default function DiagnosticResult({ profile, prenom }: Props) {
 
           <div className="my-4 h-[2px] w-24 bg-[#E4B3CC]" />
 
-          <div className="mx-auto w-full max-w-[320px] text-center text-[14px] leading-7 text-black sm:max-h-[220px] sm:w-[290px] sm:overflow-y-auto sm:leading-8">
+          <div className="mx-auto w-full max-w-[360px] text-center text-[17px] leading-8 text-black sm:max-h-[220px] sm:w-[290px] sm:overflow-y-auto sm:text-[14px] sm:leading-8">
             {text.split("\n\n").slice(0, 4).map((paragraph, index) => (
               <p key={index} className="mb-3">
                 {paragraph}
@@ -56,12 +46,12 @@ export default function DiagnosticResult({ profile, prenom }: Props) {
             ))}
           </div>
 
-          <div className="mx-auto mt-5 w-full max-w-[320px] rounded-[20px] bg-[#fffce6]/95 p-5 text-center shadow-sm">
-            <p className="mb-3 text-[15px] font-black text-[#ef2f25]">
+          <div className="mx-auto mt-5 w-full max-w-[360px] rounded-[22px] bg-[#fffce6]/95 p-5 text-center shadow-sm sm:max-w-[320px]">
+            <p className="mb-3 text-[20px] font-black text-[#ef2f25] sm:text-[15px]">
               Ta mini-action concrète
             </p>
 
-            <div className="text-[12px] font-bold leading-6 text-black">
+            <div className="text-[16px] font-bold leading-7 text-black sm:text-[12px] sm:leading-6">
               {miniActionParts.slice(0, 2).map((paragraph, index) => (
                 <p key={index} className="mb-3">
                   {paragraph}
@@ -70,12 +60,12 @@ export default function DiagnosticResult({ profile, prenom }: Props) {
             </div>
           </div>
 
-          <div className="mt-5 flex w-full flex-col items-center space-y-3">
+          <div className="mt-5 flex w-full max-w-[360px] flex-col items-center space-y-3 sm:max-w-none">
             <a
               href="https://www.harimitsiki.com/inscription-webinaire-163e0888-6a124262-4700b8c4-93ff48c0-07ba58df-08005642"
               target="_blank"
               rel="noreferrer"
-              className="mx-auto block w-full max-w-[280px] rounded-[18px] bg-[#ef2f25] px-4 py-3.5 text-center text-[13px] font-black text-white shadow-[0_14px_35px_rgba(239,47,37,0.22)] transition hover:scale-[1.01]"
+              className="mx-auto block w-full max-w-[320px] rounded-[18px] bg-[#ef2f25] px-4 py-4 text-center text-[16px] font-black text-white shadow-[0_14px_35px_rgba(239,47,37,0.22)] transition hover:scale-[1.01] sm:max-w-[280px] sm:py-3.5 sm:text-[13px]"
             >
               Rejoindre le challenge →
             </a>
@@ -84,7 +74,7 @@ export default function DiagnosticResult({ profile, prenom }: Props) {
               href="https://chat.whatsapp.com/HvURiHeUoT09Kr7IgDjikg?mode=gi_t"
               target="_blank"
               rel="noreferrer"
-              className="mx-auto block w-full max-w-[280px] rounded-[18px] bg-black px-4 py-3.5 text-center text-[13px] font-black text-white shadow-[0_10px_28px_rgba(0,0,0,0.18)] transition hover:scale-[1.01]"
+              className="mx-auto block w-full max-w-[320px] rounded-[18px] bg-black px-4 py-4 text-center text-[16px] font-black text-white shadow-[0_10px_28px_rgba(0,0,0,0.18)] transition hover:scale-[1.01] sm:max-w-[280px] sm:py-3.5 sm:text-[13px]"
             >
               Rejoindre WhatsApp
             </a>

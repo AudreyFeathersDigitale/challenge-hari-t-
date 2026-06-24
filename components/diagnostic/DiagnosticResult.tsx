@@ -22,7 +22,7 @@ export default function DiagnosticResult({ profile, prenom }: Props) {
         <img
           src="/hari-cutout.png"
           alt=""
-          className="absolute bottom-0 left-[-38px] z-20 h-[76%] max-w-none max-[420px]:left-[-54px] max-[420px]:h-[68%]"
+          className="relative z-30 ml-auto flex w-[360px] max-w-[58%] flex-col items-center pt-24 pr-6 text-center max-[420px]:w-[56%] max-[420px]:pt-16 max-[420px]:pr-1"
         />
 
         <div className="relative z-30 ml-auto flex w-[360px] max-w-[58%] flex-col items-center pt-24 pr-6 text-center max-[420px]:w-[58%] max-[420px]:pt-20 max-[420px]:pr-2">
